@@ -1,67 +1,35 @@
 # SRL — Tutorial syllabus
 
-This is the course map for the SRL tutorials. It says who the tutorials are for,
-how they're built, and what each notebook teaches, assumes, and checks. Read it
-before the notebooks; come back to it to see where you are.
+This is the course map for the SRL tutorials. 
 
 ## Who this is for
 
-A **second-year macroeconomics PhD student**. We assume you know, and have
-probably coded yourself, the following:
+We've written the tutorials with a second-year graduate student in mind. We don't assume much, but you should have seen the canonical household income-fluctuations problem before and solved it using a value function iteration method. We do **not** assume that you know anything about:
+- policy gradients / reinforcement learning
+- JAX and automatic differentiation 
 
-- the income-fluctuation / consumption–savings problem: a household facing
-  idiosyncratic income risk and a borrowing constraint;
-- value function iteration (VFI) as a way to solve it;
-- the stationary Huggett / Aiyagari general equilibrium: guess a price,
-  solve the household, compute the stationary distribution, clear the market,
-  iterate on the price;
-- Bellman equations, Euler equations, and stationary distributions as the
-  objects you reason with.
-
-We assume you know essentially nothing about the two things SRL introduces:
-
-- policy gradients / reinforcement learning (the *method*), and
-- JAX and automatic differentiation (the *tooling*).
-
-These are the two new ideas. They are independent of each other, and the course
-introduces them one at a time.
+These are the two new ideas in our paper. They are independent of each other, and the course introduces them one at a time.
+In this sense, the tutorials are self-contained. Just jump in!
 
 ## How the course is built
 
-Four principles shape the sequence. They're worth understanding up front,
-because they explain why the early notebooks start with a problem you already
-know.
+Four principles shape the sequence. They're worth understanding up front, because they explain why the early notebooks start with a problem you already know.
 
-1. **Start from the model you know, in the code you know.** Notebook 0 solves
-   the household problem in plain NumPy with VFI, no JAX and no new method. It
-   establishes the *ground-truth answer* using machinery you already trust.
+1. **Start from the model you know, in the code you know.** Notebook 0 solves the household problem in plain NumPy with VFI, no JAX and no new method. It establishes the *ground-truth answer* using machinery you already trust.
 
-2. **One new idea per notebook.** The two new innovations, JAX and the policy
-   gradient, are never introduced together. Notebook 1 changes *only* the
-   tooling (NumPy → JAX, same method). Notebook 2 changes *only* the method
-   (VFI → policy gradient, same tooling).
+2. **One new idea per notebook.** The two new innovations, JAX and the policy gradient, are never introduced together. Notebook 1 changes *only* the tooling (NumPy → JAX, same method). Notebook 2 changes *only* the method (VFI → policy gradient, same tooling).
 
-3. **Every step checks against the previous one.** Because notebooks 0, 1, and
-   2 solve the *same* problem, they must produce the *same* answer. You confirm
-   the new machinery reproduces a result you already believe before you trust
-   it on a problem you don't. (These checks are also the repo's regression
-   tests.)
+3. **Every step checks against the previous one.** Because notebooks 0, 1, and 2 solve the *same* problem, they must produce the *same* answer. You confirm the new machinery reproduces a result you already believe before you trust it on a problem you don't. (These checks are also the repo's regression tests.)
 
-4. **The model is held as constant as possible.** Notebooks 0–3 all use one
-   household problem; it grows by exactly one feature at a time. You watch a
-   single model develop rather than meeting four different ones.
+4. **The model is held as constant as possible.** Notebooks 0–3 all use one household problem; it grows by exactly one feature at a time. You watch a single model develop rather than meeting four different ones.
 
 ## The two models
 
 Everything is built on two models you already recognize:
 
-- **The household problem** (partial equilibrium, so the household takes prices
-  as given). Used in notebooks 0–3, starting from its simplest fixed-price form
-  (which is just the income-fluctuation problem) and growing to a household that
-  faces a stochastic *process* for prices.
-- **The Huggett economy** (general equilibrium, the bond price is set by market
-  clearing). Used in notebook 4, then extended with aggregate risk in notebook
-  5, the main result of the paper.
+- **The household problem** (partial equilibrium, so the household takes prices as given). Used in notebooks 0–3, starting from its simplest fixed-price form (which is just the income-fluctuation problem) and growing to a household that faces a stochastic *process* for prices.
+
+- **The Huggett economy** (general equilibrium, the bond price is set by market clearing). Used in notebook 4, then extended with aggregate risk in notebook 5, the main result of the paper.
 
 ## The sequence
 
@@ -233,22 +201,4 @@ installs `srl`; run locally it is a no-op and you just need the package installe
 | 4 | [The Huggett economy](tutorials/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/04_ge_huggett.ipynb) |
 | 5 | [Huggett with aggregate risk](tutorials/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/05_ge_huggett_agg_risk.ipynb) |
 
-## For contributors
 
-The build contract behind this syllabus:
-
-- **Source of truth is the annotated `.py` files in `tutorials/`**; the `.ipynb`
-  files (alongside them) are generated by `tutorials/build_notebooks.py`. Edit the
-  `.py`, regenerate the notebooks, and never hand-edit a notebook. (The generator
-  also injects the Colab badge + setup cell, so those are not in the `.py`
-  sources.)
-- **The economics is shown inline; the method machinery is imported.** The
-  household model (calibration, dynamics) lives inline in each tutorial so a
-  reader sees it without chasing an import. The reusable solvers (`srl`)
-  and helpers (`srl.utils`) are imported and displayed where they matter. There
-  is no `srl.models`. A model's home is the tutorial that teaches it.
-- **The "same answer as the previous notebook" checks are regression tests.**
-  The 0 ⇒ 1 ⇒ 2 agreement and the notebook-4 reference comparison are checks the
-  port and the solver have to pass, not notebooks to silently re-baseline.
-- **Every notebook ships its exercises with worked solutions.** Exercises are the
-  main active-learning device; do not drop them.
