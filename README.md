@@ -12,12 +12,12 @@ Start with the tutorials. They start with the simplest, canonical household prob
 
 | # | Notebook | Open in Colab |
 |---|----------|:-------------:|
-| 0 | [Household problem, in NumPy](tutorials/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/00_household_numpy.ipynb) |
-| 1 | [The same problem, in JAX](tutorials/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/01_household_jax.ipynb) |
-| 2 | [The same problem, by policy gradient](tutorials/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/02_household_policy_gradient.ipynb) |
-| 3 | [The household with moving prices](tutorials/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/03_household_moving_prices.ipynb) |
-| 4 | [The Huggett economy](tutorials/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/04_ge_huggett.ipynb) |
-| 5 | [Huggett with aggregate risk](tutorials/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreasschaab/SRL/blob/main/tutorials/05_ge_huggett_agg_risk.ipynb) |
+| 0 | [Household problem, in NumPy](tutorials/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/00_household_numpy.ipynb) |
+| 1 | [The same problem, in JAX](tutorials/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/01_household_jax.ipynb) |
+| 2 | [The same problem, by policy gradient](tutorials/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/02_household_policy_gradient.ipynb) |
+| 3 | [The household with moving prices](tutorials/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/03_household_moving_prices.ipynb) |
+| 4 | [The Huggett economy](tutorials/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/04_ge_huggett.ipynb) |
+| 5 | [Huggett with aggregate risk](tutorials/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/05_ge_huggett_agg_risk.ipynb) |
 
 Each notebook runs top to bottom on a free Colab GPU (click the badge) or locally on a CPU (but more slowly). On Colab the first cell clones the repo and installs the package, so there's no token and no setup notebook.
 

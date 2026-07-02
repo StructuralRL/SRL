@@ -46,7 +46,7 @@ KERNELSPEC = {"display_name": "Python 3", "language": "python", "name": "python3
 #
 # The SUBDIR seam: the tutorials live at the repo root, so SUBDIR is empty and
 # badge/clone paths point straight at the public repo.
-REPO_OWNER = "andreasschaab"
+REPO_OWNER = "StructuralRL"
 REPO_NAME = "SRL"
 SUBDIR = ""
 DEFAULT_BRANCH = "main"
