@@ -9,8 +9,8 @@ description = "Structural Reinforcement Learning for heterogeneous-agent macroec
 requires-python = ">=3.11"
 license = "MIT"
 authors = [
-    { name = "Chiyuan Wang" },
     { name = "Yucheng Yang" },
+    { name = "Chiyuan Wang" },
     { name = "Andreas Schaab" },
     { name = "Benjamin Moll" },
 ]
