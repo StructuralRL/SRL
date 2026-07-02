@@ -93,7 +93,12 @@ def _setup_cell(stem: str) -> str:
     """
     install = "" if stem in NO_SRL_INSTALL else (
         f'\n    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-e", '
-        f'"{_repo_subpath()}"], check=True)')
+        f'"{_repo_subpath()}"], check=True)'
+        '\n    # Import srl straight from the clone. A mid-session `pip install -e`'
+        '\n    # registers the package only through a .pth file that Python reads at'
+        '\n    # startup, so it does not take effect in the already-running Colab'
+        '\n    # kernel. Putting the repo root on sys.path makes `import srl` work now.'
+        f'\n    sys.path.insert(0, os.path.abspath("{_repo_subpath()}"))')
     return (
         "# --- Colab setup (auto-injected by build_notebooks.py; do not edit the .ipynb) ---\n"
         "import os, sys, subprocess\n"
