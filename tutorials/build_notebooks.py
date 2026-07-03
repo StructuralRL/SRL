@@ -90,10 +90,22 @@ def _setup_cell(stem: str) -> str:
     ``from calibration import ...`` and relative ``data/`` paths resolve, and that
     directory is put on ``sys.path`` (Colab does not always carry the cwd there).
     The basename guard makes re-running the cell idempotent.
+
+    The install uses ``--no-deps`` on purpose. Colab preinstalls jax and its GPU
+    plugin (jax-cuda12-plugin) as a matched pair; honoring the ``jax==``
+    reproducibility pin from ``pyproject.toml`` would replace the framework but
+    not the plugin, and the first computation on a GPU runtime then dies with a
+    PJRT version-mismatch error. Everything srl needs (jax, optax, numpy, scipy,
+    matplotlib, tqdm) already ships with Colab, so we leave the runtime alone.
+    The pin still governs local installs and the validated GPU image; on Colab
+    the notebooks run on whatever jax Colab ships, which we accept.
     """
     install = "" if stem in NO_SRL_INSTALL else (
-        f'\n    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-e", '
-        f'"{_repo_subpath()}"], check=True)'
+        f'\n    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--no-deps", '
+        f'"-e", "{_repo_subpath()}"], check=True)'
+        '\n    # --no-deps: Colab already ships jax (with its matched GPU plugin), optax,'
+        '\n    # numpy, scipy, matplotlib, and tqdm. Installing our pinned jax here would'
+        '\n    # desync it from the preinstalled GPU plugin and crash GPU runtimes.'
         '\n    # Import srl straight from the clone. A mid-session `pip install -e`'
         '\n    # registers the package only through a .pth file that Python reads at'
         '\n    # startup, so it does not take effect in the already-running Colab'
