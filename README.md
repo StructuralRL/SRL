@@ -4,7 +4,7 @@ This repo presents a pedagogical [JAX](https://github.com/jax-ml/jax) implementa
 policy-gradient methods for heterogeneous-agent macro models in general
 equilibrium, including with aggregate risk.
 
-SRL goes with the paper *Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics* by Yucheng Yang, Chiyuan Wang, Andreas Schaab, and Benjamin Moll. We try to make the repo and our codes as accessible as possible. Our hope is that you will be able to clone the repo, read the notebooks top to bottom, and easily follow along with both the economics and the method. Note this is the *tutorial repo* for SRL, not the final replication codes.
+SRL goes with the paper [*Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics*](https://benjaminmoll.com/SRL/) by [Yucheng Yang](https://sites.google.com/site/yangyucheng1993/home), [Chiyuan Wang](https://wangchiyuan.com/), [Andreas Schaab](http://andreasschaab.com/), and [Benjamin Moll](https://benjaminmoll.com). We try to make the repo and our codes as accessible as possible. Our hope is that you will be able to clone the repo, read the notebooks top to bottom, and easily follow along with both the economics and the method. Note this is the *tutorial repo* for SRL, not the final replication codes.
 
 ## The tutorials
 
