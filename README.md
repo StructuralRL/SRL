@@ -1,25 +1,25 @@
-# SRL — Structural Reinforcement Learning
+# SRL Tutorial
 
 This repo presents a pedagogical [JAX](https://github.com/jax-ml/jax) implementation of
 policy-gradient methods for heterogeneous-agent macro models in general
 equilibrium, including with aggregate risk.
 
-SRL goes with the paper *Structural Reinforcement Learning* by Yucheng Yang, Chiyuan Wang, Andreas Schaab, and Benjamin Moll. We try to make the repo and our codes as accessible as possible. Our hope is that you will be able to clone the repo, read the notebooks top to bottom, and easily follow along with both the economics and the method.
+SRL goes with the paper *Structural Reinforcement Learning* by Yucheng Yang, Chiyuan Wang, Andreas Schaab, and Benjamin Moll. We try to make the repo and our codes as accessible as possible. Our hope is that you will be able to clone the repo, read the notebooks top to bottom, and easily follow along with both the economics and the method. Note this is the *tutorial repo* for SRL, not the final replication codes.
 
 ## The tutorials
 
 Start with the tutorials. They start with the simplest, canonical household problem and build up to our full implementation of a heterogeneous agent model with aggregate risk by adding one step at a time. Read them in order from notebook 0. [TUTORIAL.md](TUTORIAL.md) is the full syllabus.
 
-| # | Notebook | Open in Colab |
-|---|----------|:-------------:|
-| 0 | [Household problem, in NumPy](tutorials_new/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/00_household_numpy.ipynb) |
-| 1 | [The same problem, in JAX](tutorials_new/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/01_household_jax.ipynb) |
-| 2 | [The same problem, by policy gradient](tutorials_new/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/02_household_policy_gradient.ipynb) |
-| 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) |
-| 4 | [The Huggett economy](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) |
-| 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) |
+| # | Notebook | Open in Colab | Colab G4 runtime | Free Colab T4 runtime |
+|---|----------|:-------------:|:--------:|:-------------:|
+| 0 | [Household problem, in NumPy](tutorials_new/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/00_household_numpy.ipynb) | ~1 min | ~3 min |
+| 1 | [The same problem, in JAX](tutorials_new/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/01_household_jax.ipynb) | ~6 s | ~15 s |
+| 2 | [The same problem, by policy gradient](tutorials_new/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/02_household_policy_gradient.ipynb) | ~30 s | ~1 min |
+| 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) | ~45 s | ~1.5 min |
+| 4 | [The Huggett economy](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
+| 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) | ~35 s | ~1.5 min |
 
-Each notebook runs top to bottom on a free Colab GPU (click the badge) or locally on a CPU (but more slowly). On Colab the first cell clones the repo and installs the package, so there's no token and no setup notebook.
+Each notebook runs top to bottom on a Colab GPU (click the badge) or locally on a CPU (but more slowly). On Colab the first cell clones the repo and installs the package, so there's no token and no setup notebook.
 
 ## Install (local)
 
