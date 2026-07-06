@@ -12,12 +12,12 @@ Start with the tutorials. They start with the simplest, canonical household prob
 
 | # | Notebook | Open in Colab |
 |---|----------|:-------------:|
-| 0 | [Household problem, in NumPy](tutorials/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/00_household_numpy.ipynb) |
-| 1 | [The same problem, in JAX](tutorials/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/01_household_jax.ipynb) |
-| 2 | [The same problem, by policy gradient](tutorials/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/02_household_policy_gradient.ipynb) |
-| 3 | [The household with moving prices](tutorials/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/03_household_moving_prices.ipynb) |
-| 4 | [The Huggett economy](tutorials/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/04_ge_huggett.ipynb) |
-| 5 | [Huggett with aggregate risk](tutorials/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/05_ge_huggett_agg_risk.ipynb) |
+| 0 | [Household problem, in NumPy](tutorials_new/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/00_household_numpy.ipynb) |
+| 1 | [The same problem, in JAX](tutorials_new/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/01_household_jax.ipynb) |
+| 2 | [The same problem, by policy gradient](tutorials_new/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/02_household_policy_gradient.ipynb) |
+| 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) |
+| 4 | [The Huggett economy](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) |
+| 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) |
 
 Each notebook runs top to bottom on a free Colab GPU (click the badge) or locally on a CPU (but more slowly). On Colab the first cell clones the repo and installs the package, so there's no token and no setup notebook.
 
@@ -35,10 +35,7 @@ machines.
 - **`srl/`** is the package: The policy-gradient solver (`SPGSolver`), a
   value-function-iteration baseline (`VFISolver`), and the discretization and
   plotting helpers (`srl.utils`).
-- **`tutorials/`**: the notebook sequence (percent-format `.py` sources and the
-  generated `.ipynb`), the shared `calibration.py`, and the SSJ reference data.
-  The notebooks are generated from their `.py` sources by
-  `tutorials/build_notebooks.py`, so don't hand-edit a `.ipynb`.
+- **`tutorials_new/`**: the notebooks, the shared `calibration.py`, and the SSJ reference data.
 - **`TUTORIAL.md`** is the syllabus.
 
 ## License & citation
