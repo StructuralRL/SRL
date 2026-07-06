@@ -4,7 +4,7 @@ This repo presents a pedagogical [JAX](https://github.com/jax-ml/jax) implementa
 policy-gradient methods for heterogeneous-agent macro models in general
 equilibrium, including with aggregate risk.
 
-SRL goes with the paper *Structural Reinforcement Learning* by Yucheng Yang, Chiyuan Wang, Andreas Schaab, and Benjamin Moll. We try to make the repo and our codes as accessible as possible. Our hope is that you will be able to clone the repo, read the notebooks top to bottom, and easily follow along with both the economics and the method. Note this is the *tutorial repo* for SRL, not the final replication codes.
+SRL goes with the paper *Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics* by Yucheng Yang, Chiyuan Wang, Andreas Schaab, and Benjamin Moll. We try to make the repo and our codes as accessible as possible. Our hope is that you will be able to clone the repo, read the notebooks top to bottom, and easily follow along with both the economics and the method. Note this is the *tutorial repo* for SRL, not the final replication codes.
 
 ## The tutorials
 
@@ -16,7 +16,7 @@ Start with the tutorials. They start with the simplest, canonical household prob
 | 1 | [The same problem, in JAX](tutorials_new/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/01_household_jax.ipynb) | ~6 s | ~15 s |
 | 2 | [The same problem, by policy gradient](tutorials_new/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/02_household_policy_gradient.ipynb) | ~30 s | ~1 min |
 | 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) | ~45 s | ~1.5 min |
-| 4 | [The Huggett economy](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
+| 4 | [Huggett without aggregate risk](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
 | 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) | ~35 s | ~1.5 min |
 
 Each notebook runs top to bottom on a Colab GPU (click the badge) or locally on a CPU (but more slowly). On Colab the first cell clones the repo and installs the package, so there's no token and no setup notebook.
@@ -40,4 +40,14 @@ machines.
 
 ## License & citation
 
-MIT, see [LICENSE](LICENSE). If you use SRL in your work, please cite our paper.
+MIT, see [LICENSE](LICENSE). If you use SRL in your work, please cite our paper:
+
+@misc{SRL,
+      title={Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics}, 
+      author={Yucheng Yang and Chiyuan Wang and Andreas Schaab and Benjamin Moll},
+      year={2025},
+      eprint={2512.18892},
+      archivePrefix={arXiv},
+      primaryClass={econ.TH},
+      url={https://arxiv.org/abs/2512.18892}, 
+}
