@@ -42,12 +42,14 @@ machines.
 
 MIT, see [LICENSE](LICENSE). If you use SRL in your work, please cite our paper:
 
+```bibtex
 @misc{SRL,
-      title={Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics}, 
+      title={Structural Reinforcement Learning for Heterogeneous Agent Macroeconomics},
       author={Yucheng Yang and Chiyuan Wang and Andreas Schaab and Benjamin Moll},
       year={2025},
       eprint={2512.18892},
       archivePrefix={arXiv},
       primaryClass={econ.TH},
-      url={https://arxiv.org/abs/2512.18892}, 
+      url={https://arxiv.org/abs/2512.18892},
 }
+```
