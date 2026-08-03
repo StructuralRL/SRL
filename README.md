@@ -18,6 +18,7 @@ Start with the tutorials. They start with the simplest, canonical household prob
 | 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) | ~45 s | ~1.5 min |
 | 4 | [Huggett without aggregate risk](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
 | 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) | ~35 s | ~1.5 min |
+| 6 | [Huggett with Epstein-Zin preferences](tutorials_new/06_ge_huggett_epstein_zin.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/06_ge_huggett_epstein_zin.ipynb) | ~5 min | ~10 min |
 
 Each notebook runs top to bottom on a Colab GPU (click the badge) or locally on a CPU (but more slowly). On Colab the first cell clones the repo and installs the package, so there's no token and no setup notebook.
 

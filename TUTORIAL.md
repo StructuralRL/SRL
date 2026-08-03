@@ -41,6 +41,7 @@ Everything is built on two models you already recognize:
 | 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | household, stochastic price process | the household conditions on a *price process* |
 | 4 | [The Huggett economy](tutorials_new/04_ge_huggett.ipynb) | stationary GE | the price is set by **market clearing**; price-taking as stop-gradient |
 | 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | GE + aggregate shocks | prices replace the distribution as the state; learned from simulation |
+| 6 | [Huggett with Epstein-Zin preferences](tutorials_new/06_ge_huggett_epstein_zin.ipynb) | GE + aggregate shocks + recursive utility | risk aversion and intertemporal substitution enter separately |
 
 ---
 
@@ -182,6 +183,24 @@ This is the notebook that matters most.
 - **Exercises.** Compare impulse responses to an aggregate shock; examine how
   much carrying only the price (not the distribution) costs in accuracy.
 
+### 6. Huggett with Epstein-Zin preferences
+
+- **What you build.** The aggregate-risk Huggett economy from notebook 5 with
+  Epstein-Zin preferences in place of additive CRRA utility.
+- **The one new idea.** Risk aversion and the elasticity of intertemporal
+  substitution can now move separately. Simulated consumption paths are saved
+  in the forward pass and valued with a backward recursion.
+- **What you should already know.** Notebooks 2 and 5, plus basic CRRA
+  preferences.
+- **Shows inline / imports.** The Epstein-Zin backward step is shown inline.
+  The policy, household transition, and market-clearing machinery are the same
+  as in notebook 5.
+- **The check.** When risk aversion equals the inverse of the EIS, Epstein-Zin
+  simplifies to the CRRA benchmark. Values, policy gradients, consumption
+  policies, and equilibrium bond prices agree numerically.
+- **Exercises.** Change risk aversion while holding the EIS fixed, then change
+  the EIS while holding risk aversion fixed.
+
 ---
 
 ## Running the tutorials
@@ -200,5 +219,5 @@ installs `srl`; run locally it is a no-op and you just need the package installe
 | 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) | ~45 s | ~1.5 min |
 | 4 | [Huggett without aggregate risk](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
 | 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) | ~35 s | ~1.5 min |
-
+| 6 | [Huggett with Epstein-Zin preferences](tutorials_new/06_ge_huggett_epstein_zin.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/06_ge_huggett_epstein_zin.ipynb) | ~5 min | ~10 min |
 
