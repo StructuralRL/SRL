@@ -35,13 +35,13 @@ Everything is built on two models you already recognize:
 
 | # | Notebook | Model | The one new idea |
 |---|----------|-------|------------------|
-| 0 | [Household problem, in NumPy](tutorials_new/00_household_numpy.ipynb) | household, fixed price | the ground truth: VFI in code you already write |
-| 1 | [The same problem, in JAX](tutorials_new/01_household_jax.ipynb) | household, fixed price | the tooling: `grad` / `vmap` / `jit`, taught by porting notebook 0 |
-| 2 | [The same problem, by policy gradient](tutorials_new/02_household_policy_gradient.ipynb) | household, fixed price | the method: maximize lifetime utility directly by autodiff |
-| 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | household, stochastic price process | the household conditions on a *price process* |
-| 4 | [The Huggett economy](tutorials_new/04_ge_huggett.ipynb) | stationary GE | the price is set by **market clearing**; price-taking as stop-gradient |
-| 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | GE + aggregate shocks | prices replace the distribution as the state; learned from simulation |
-| 6 | [Huggett with Epstein-Zin preferences](tutorials_new/06_ge_huggett_epstein_zin.ipynb) | GE + aggregate shocks + recursive utility | risk aversion and intertemporal substitution enter separately |
+| 0 | [Household problem, in NumPy](tutorials/00_household_numpy.ipynb) | household, fixed price | the ground truth: VFI in code you already write |
+| 1 | [The same problem, in JAX](tutorials/01_household_jax.ipynb) | household, fixed price | the tooling: `grad` / `vmap` / `jit`, taught by porting notebook 0 |
+| 2 | [The same problem, by policy gradient](tutorials/02_household_policy_gradient.ipynb) | household, fixed price | the method: maximize lifetime utility directly by autodiff |
+| 3 | [The household with moving prices](tutorials/03_household_moving_prices.ipynb) | household, stochastic price process | the household conditions on a *price process* |
+| 4 | [The Huggett economy](tutorials/04_ge_huggett.ipynb) | stationary GE | the price is set by **market clearing**; price-taking as stop-gradient |
+| 5 | [Huggett with aggregate risk](tutorials/05_ge_huggett_agg_risk.ipynb) | GE + aggregate shocks | prices replace the distribution as the state; learned from simulation |
+| 6 | [Huggett with Epstein-Zin preferences](tutorials/06_ge_huggett_epstein_zin.ipynb) | GE + aggregate shocks + recursive utility | risk aversion and intertemporal substitution enter separately |
 
 ---
 
@@ -213,11 +213,11 @@ installs `srl`; run locally it is a no-op and you just need the package installe
 
 | # | Notebook | Open in Colab | Colab G4 runtime | Free Colab T4 runtime |
 |---|----------|:-------------:|:--------:|:-------------:|
-| 0 | [Household problem, in NumPy](tutorials_new/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/00_household_numpy.ipynb) | ~1 min | ~3 min |
-| 1 | [The same problem, in JAX](tutorials_new/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/01_household_jax.ipynb) | ~6 s | ~15 s |
-| 2 | [The same problem, by policy gradient](tutorials_new/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/02_household_policy_gradient.ipynb) | ~30 s | ~1 min |
-| 3 | [The household with moving prices](tutorials_new/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/03_household_moving_prices.ipynb) | ~45 s | ~1.5 min |
-| 4 | [Huggett without aggregate risk](tutorials_new/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
-| 5 | [Huggett with aggregate risk](tutorials_new/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/05_ge_huggett_agg_risk.ipynb) | ~35 s | ~1.5 min |
-| 6 | [Huggett with Epstein-Zin preferences](tutorials_new/06_ge_huggett_epstein_zin.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials_new/06_ge_huggett_epstein_zin.ipynb) | ~5 min | ~10 min |
+| 0 | [Household problem, in NumPy](tutorials/00_household_numpy.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/00_household_numpy.ipynb) | ~1 min | ~3 min |
+| 1 | [The same problem, in JAX](tutorials/01_household_jax.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/01_household_jax.ipynb) | ~6 s | ~15 s |
+| 2 | [The same problem, by policy gradient](tutorials/02_household_policy_gradient.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/02_household_policy_gradient.ipynb) | ~30 s | ~1 min |
+| 3 | [The household with moving prices](tutorials/03_household_moving_prices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/03_household_moving_prices.ipynb) | ~45 s | ~1.5 min |
+| 4 | [Huggett without aggregate risk](tutorials/04_ge_huggett.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/04_ge_huggett.ipynb) | ~4.5 min | ~8 min |
+| 5 | [Huggett with aggregate risk](tutorials/05_ge_huggett_agg_risk.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/05_ge_huggett_agg_risk.ipynb) | ~35 s | ~1.5 min |
+| 6 | [Huggett with Epstein-Zin preferences](tutorials/06_ge_huggett_epstein_zin.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StructuralRL/SRL/blob/main/tutorials/06_ge_huggett_epstein_zin.ipynb) | ~5 min | ~10 min |
 
